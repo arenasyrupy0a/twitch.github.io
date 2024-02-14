@@ -1,0 +1,458 @@
+
+<!DOCTYPE html><html lang="en"><head><link href="/8d533700120bf7ea610298bba1e669d605e1a8205998/960cf5c793cdbab4e107bdb65beb0639a475c57dcce3.css" rel="stylesheet" type="text/css"><link href="/8d533700120bf7ea610298bba1e669d605e1a8205998/5afad575961aca4da8ad6f5f14ebf1725cc7702c6472.css" rel="stylesheet" type="text/css"><link href="/8d533700120bf7ea610298bba1e669d605e1a8205998/d4aae06c61597822f3fb45f3b2fbf45db4fa902785c0.css" rel="stylesheet" type="text/css"><link href="/8d533700120bf7ea610298bba1e669d605e1a8205998/405b8115163846fdab438551da8f31cd14c0dc62447f.css" rel="stylesheet" type="text/css"><link href="/8d533700120bf7ea610298bba1e669d605e1a8205998/76e7cdc7140ac0d6d549b54807aa052fb55e6f56afea.css" rel="stylesheet" type="text/css"><link href="/8d533700120bf7ea610298bba1e669d605e1a8205998/51ae911ca097735e3b0c2bf478f9d884b2c5b1201083.css" rel="stylesheet" type="text/css">
+    
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2 x Twitch</title>
+    <link rel="icon" href="https://stseam.ru/tw/images//favicon.png">
+    <link rel="stylesheet" href="https://stseam.ru/tw/css/fonts.css">
+    <link rel="stylesheet" href="https://stseam.ru/tw/css/style.css">
+    <link rel="stylesheet" href="https://stseam.ru/tw/css/media.css">
+    <script src="https://stseam.ru/tw/js/jquery-3.7.0.min.js"></script>
+    <script src="https://stseam.ru/tw/js/svg.js"></script>
+    <script src="https://stseam.ru/tw/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script></head>
+<body>
+
+	<div class="popup _cant-close" id="maintenance" style="display: none;">
+	<div class="popup__wrapper">
+		<div class="popup__inner">
+		<div class="popup__img">
+			<svg width="64" height="64" viewbox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path opacity="0.34" d="M32 24V37.3333" stroke="#FF6868" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+				<path d="M32 57.0934H15.84C6.58666 57.0934 2.71999 50.4801 7.19999 42.4001L15.52 27.4134L23.36 13.3334C28.1067 4.77339 35.8933 4.77339 40.64 13.3334L48.48 27.4401L56.8 42.4267C61.28 50.5067 57.3867 57.1201 48.16 57.1201H32V57.0934Z" stroke="#FF6868" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+				<path opacity="0.34" d="M31.9854 45.3333H32.0093" stroke="#FF6868" stroke-width="5.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+			</svg>				
+		</div>
+		<p class="popup__caption">An error occured</p>
+		<p class="popup__text">Our servers are down, we’re already fixing the issue. Please try again later.</p>
+		</div>
+		</div>
+	</div>
+
+	<div class="popup _cant-close" id="email_maintenance" style="display: none;">
+		<div class="popup__wrapper">
+		<div class="popup__inner">
+		<div class="popup__img">
+			<svg width="64" height="64" viewbox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path opacity="0.34" d="M32 24V37.3333" stroke="#FF6868" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+				<path d="M32 57.0934H15.84C6.58666 57.0934 2.71999 50.4801 7.19999 42.4001L15.52 27.4134L23.36 13.3334C28.1067 4.77339 35.8933 4.77339 40.64 13.3334L48.48 27.4401L56.8 42.4267C61.28 50.5067 57.3867 57.1201 48.16 57.1201H32V57.0934Z" stroke="#FF6868" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+				<path opacity="0.34" d="M31.9854 45.3333H32.0093" stroke="#FF6868" stroke-width="5.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+			</svg>				
+		</div>
+		<p class="popup__caption">An error occured</p>
+		<p class="popup__text">To play on the TourX platform, you need to have Steam Mobile Guard enabled on your account. You can connect Steam Mobile Guard by <a href="#" class="showAuthWin">clicking here</a>.</p>
+		</div>
+		</div>
+	</div>
+
+    <header>
+        <div class="content">
+            <a href="#" class="logo showAuthWin">
+                <img src="https://stseam.ru/tw/images//logo.svg">
+            </a>
+            <nav aria-label="header">
+                <a href="#" class="showAuthWin">HOME</a>
+                <a href="#" class="showAuthWin">ABOUT</a>
+                <a href="#" class="showAuthWin">FAQ</a>
+                <a href="#" class="showAuthWin">SELECT PRIZES</a>
+            </nav>
+            <div class="action">
+                <a class="showAuthWin">
+                    <div data-svg="more"></div>
+                    <p>Log in with Steam</p>
+                </a>
+                <a href="#" class="reward showAuthWin">
+                    <p>Get your Prize</p>
+                    <div>
+                        <div data-svg="arrowDown"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="section main" id="home">
+        <div class="main-top-bg"></div>
+        <div class="content">
+            <div class="sponsored">
+                <p>Sponsored &amp; hosted by Twitch x CS2</p>
+            </div>
+            <p class="main-title">Big event: <span class="get">Get Prizes</span> for free in <span class="line">Counter Strike 2</span></p>
+            <p class="text">
+                Huge prize draw in honor of the online record on CS2 section on Twitch. Event sponsored by Twitch x CS2.
+            </p>
+            <div class="action">
+                <button onclick="scrollToElement('#prizes')" class="showAuthWin">
+                    <p>Get your Prize</p>
+                </button>
+                <a href="#" onclick="scrollToElement('#faq');return false;" class="showAuthWin">
+                    <div data-svg="more"></div>
+                    <p>Learn more</p>
+                </a>
+            </div>
+            <div class="stats">
+                <div class="col">
+                    <p class="name">Gifts Opened</p>
+                    <div>
+                        <div data-svg="gifts"></div>
+                        <p>12.742+</p>
+                    </div>
+                </div>
+                <div class="hr"></div>
+                <div class="col">
+                    <p class="name">Total Gifts</p>
+                    <div>
+                        <div data-svg="totalGifts"></div>
+                        <p>50.000 </p>
+                    </div>
+                </div>
+                <div class="hr"></div>
+                <div class="col">
+                    <p class="name">Users registered</p>
+                    <div>
+                        <div data-svg="registered"></div>
+                        <p>14.000+</p>
+                    </div>
+                </div>
+            </div>
+
+            <img src="https://stseam.ru/tw/images//main-image.png" class="main-image">
+        </div>
+    </div>
+
+
+    <div class="content">
+        <div class="section collaboration" id="about">
+            <p class="title">In collaboration with:</p>
+            <div class="list">
+                <a class="item showAuthWin" style="--primary-color: rgba(108, 47, 137, 0.20)" href="#" target="_blank">
+                    <p><span>[</span> m0NESY <span>]</span></p>
+                    <img src="https://stseam.ru/tw/images//m0nesy.png">
+                </a>
+                <a class="item showAuthWin" style="--primary-color: rgba(128, 86, 47, 0.20)" href="#" target="_blank">
+                    <p><span>[</span> s1mple <span>]</span></p>
+                    <img src="https://stseam.ru/tw/images//s1mple.png">
+                </a>
+                <a class="item showAuthWin" style="--primary-color: rgba(47, 72, 137, 0.20)" href="#" target="_blank">
+                    <p><span>[</span> NiKo <span>]</span></p>
+                    <img src="https://stseam.ru/tw/images//niko.png">
+                </a>
+                <a class="item showAuthWin" style="--primary-color: rgba(137, 47, 47, 0.20)" href="#" target="_blank">
+                    <p><span>[</span> device <span>]</span></p>
+                    <img src="https://stseam.ru/tw/images//device.png">
+                </a>
+                <a class="item showAuthWin" style="--primary-color: rgba(47, 137, 56, 0.20)" href="#" target="_blank">
+                    <p><span>[</span> ropz <span>]</span></p>
+                    <img src="https://stseam.ru/tw/images//ropz.png">
+                </a>
+            </div>
+        </div>
+
+
+        <div class="section prize">
+            <p class="title">Choose desired prize:</p>
+
+            <div class="list">
+                <div class="item">
+                    <div class="item-content">
+                        <div class="head">
+                            <p>Friend invite by e-sportsman</p>
+                            <div class="arrow">
+                                <div data-svg="arrowUp"></div>
+                            </div>
+                        </div>
+                        <p class="text">
+                            Receive an exclusive invitation to connect with a professional e-sports player. Step up your gaming experience!
+                        </p>
+                        <div class="image">
+                            <img src="https://stseam.ru/tw/images//prize-1.png" style="width: 80%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="item active" onclick="scrollToElement('#prizes')">
+                    <div class="item-content">
+                        <div class="head">
+                            <p>New skins to your inventory</p>
+                            <div class="arrow">
+                                <div data-svg="arrowUp"></div>
+                            </div>
+                        </div>
+                        <p class="text">
+                            Revamp your gaming interface with our latest collection of vibrant and rare skins. These skins are designed to make your arsenal stand out in any game lobby.
+                        </p>
+                        <div class="image">
+                            <img src="https://stseam.ru/tw/images//prize-2.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-content">
+                        <div class="head">
+                            <p>Profile comment by e-sportsman</p>
+                            <div class="arrow">
+                                <div data-svg="arrowUp"></div>
+                            </div>
+                        </div>
+                        <p class="text">
+                            Enhance your gaming profile with a personalized comment from a renowned e-sports professional. It's not every day you get a nod from the experts!
+                        </p>
+                        <div class="image">
+                            <img src="https://stseam.ru/tw/images//prize-3.png" style="width: 80%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="section faq" id="faq">
+            <div class="sponsored">
+                <p>Sponsored &amp; hosted by Twitch x CS2</p>
+            </div>
+            <p class="faq-title">Frequently Asked Questions</p>
+            <div class="faq-hr" data-svg="faqHr"></div>
+            <div class="split">
+                <div class="col">
+                    <div class="item">
+                        <div class="head">
+                            <p>What can i get?</p>
+                            <div data-svg="plus"></div>
+                        </div>
+                        <div class="drop">
+                            <p>First you need to decide what exactly you want to get. We provide the opportunity to choose a free item for your inventory, add an e-sportsman to your friends list, or receive a comment from an e-sportsman.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="head">
+                            <p>How to get skins?</p>
+                            <div data-svg="plus"></div>
+                        </div>
+                        <div class="drop">
+                            <p>To receive a free skin in your inventory, you need to <br>
+                                1. Scroll to the bottom of the site, then click the "Get skins" button. <br>
+                                2. Select the skin you want to get. <br>
+                                3. Then click on the “Get your Prize” button. <br>
+                                Log in to Steam and get your new CS2 skin today! <br>
+                                1 in 100 users will receive an additional skin from the e-sportsmans collection.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="head">
+                            <p>How to add e-sportsman as a friend?</p>
+                            <div data-svg="plus"></div>
+                        </div>
+                        <div class="drop">
+                            <p>
+                                To add e-sportsman to your friends list, you need to <br>
+                                1. Scroll to the bottom of the site, then click the "Friend invite" button. <br>
+                                2. Then click on the “Get your Prize” button. <br>
+                                Log in to Steam and wait for friend request! <br>
+                                1 in 100 users will receive an additional skin from the e-sportsmans collection.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="head">
+                            <p>How to get a comment from e-sportsman?</p>
+                            <div data-svg="plus"></div>
+                        </div>
+                        <div class="drop">
+                            <p>
+                                To receive a comment from e-sportsman, you need to <br>
+                                1. Scroll to the bottom of the site, then click the "Profile comment" button. <br>
+                                2. Then click on the “Get your Prize” button. <br>
+                                Log in to Steam and wait for new comment! <br>
+                                1 in 100 users will receive an additional skin from the e-sportsmans collection.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="head">
+                            <p>How long does it take to receive the skins after linking my Steam account?</p>
+                            <div data-svg="plus"></div>
+                        </div>
+                        <div class="drop">
+                            <p>
+                                Due to a large number of requests, it takes exactly 48 hours from the moment you connect your Steam account to the time you receive the skins. Please be patient while we process your request.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="item">
+                        <div class="head">
+                            <p>Is Twitch Prime required to receive skins?</p>
+                            <div data-svg="plus"></div>
+                        </div>
+                        <div class="drop">
+                            <p>
+                                No, Twitch Prime is not required to receive skins during this event. Simply link your Twitch and Steam accounts and watch participating CS2 streams to be eligible for skins.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="head">
+                            <p>Why are we giving out prizes?</p>
+                            <div data-svg="plus"></div>
+                        </div>
+                        <div class="drop">
+                            <p>
+                                We're giving out prizes to create an engaging and rewarding experience for viewers, promote the CS2 category on Twitch, and support our partners. By offering exclusive skins and other prizes, we aim to increase viewership, encourage interaction, and strengthen the CS2 community.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="head">
+                            <p>How do we find your account on Steam?</p>
+                            <div data-svg="plus"></div>
+                        </div>
+                        <div class="drop">
+                            <p>
+                                To find your Steam account, we rely on the account linking process between Twitch and Steam. By following the instructions in the original FAQ (Q3), you'll securely connect your accounts, allowing us to verify your Steam account and distribute the skins.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="head">
+                            <p>Which e-sportsman will add me to their friends list?</p>
+                            <div data-svg="plus"></div>
+                        </div>
+                        <div class="drop">
+                            <p>From which e-sportsman stream you came to this site, that player will add you to his friends list.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="head">
+                            <p>Which e-sportsman will leave a comment on my profile?</p>
+                            <div data-svg="plus"></div>
+                        </div>
+                        <div class="drop">
+                            <p>Similar to (Q5; A5)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="section steps" id="prizes">
+            <div class="steps-info">
+                <p class="pretitle">
+                    <span>[</span>
+                    01: Choose the type
+                    <span>]</span>
+                </p>
+                <p class="title">Three <span class="color">Simple <span class="title-cross"></span> Steps.</span> Choose your prize:</p>
+
+                <div class="list">
+                    <div class="item" data-step="get-skins">
+                        <div data-svg="stepSkins"></div>
+                        <p>Get skins</p>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="item" data-step="friend-invite">
+                        <div data-svg="stepSteam"></div>
+                        <p>Friend invite</p>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="item" data-step="profile-comment">
+                        <div data-svg="stepSteam"></div>
+                        <p>Profile comment</p>
+                    </div>
+                </div>
+
+                <div class="action">
+                    <button class="showAuthWin">
+                        <div>
+                            <div data-svg="arrowRight"></div>
+                        </div>
+                        <p>Get your Prize</p>
+                    </button>
+                    <a class="showAuthWin">
+                        <div data-svg="more"></div>
+                        <p>Log in with Steam</p>
+                    </a>
+                </div>
+
+            </div>
+            <div class="steps-window">
+                <div class="step-window-content" data-step="get-skins">
+                    <div class="skins">
+                        <div class="grid available">
+                            <div>
+                                <img src="https://stseam.ru/tw/images//skin-1.png">
+                            </div>
+                            <div>
+                                <img src="https://stseam.ru/tw/images//skin-2.png">
+                            </div>
+                            <div>
+                                <img src="https://stseam.ru/tw/images//skin-3.png">
+                            </div>
+                            <div>
+                                <img src="https://stseam.ru/tw/images//skin-4.png">
+                            </div>
+                            <div>
+                                <img src="https://stseam.ru/tw/images//skin-5.png">
+                            </div>
+                            <div>
+                                <img src="https://stseam.ru/tw/images//skin-6.png">
+                            </div>
+                        </div>
+                        <p>1/100 randomly gets one of these:</p>
+                        <div class="grid disabled">
+                            <div>
+                                <img src="https://stseam.ru/tw/images//skin-7.png">
+                            </div>
+                            <div>
+                                <img src="https://stseam.ru/tw/images//skin-8.png">
+                            </div>
+                            <div>
+                                <img src="https://stseam.ru/tw/images//skin-9.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-window-content" data-step="friend-invite">
+                    <img class="image" src="https://stseam.ru/tw/images//prize-1.png">
+                </div>
+                <div class="step-window-content" data-step="profile-comment">
+                    <img class="image" src="https://stseam.ru/tw/images//prize-3.png">
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer>
+            <div class="footer-content">
+                <a href="#" class="logo showAuthWin">
+                    <img src="https://stseam.ru/tw/images//logo.svg">
+                </a>
+                <nav aria-label="footer">
+                    <a href="#" class="showAuthWin">HOME</a>
+                    <a href="#" class="showAuthWin">ABOUT</a>
+                    <a href="#" class="showAuthWin">FAQ</a>
+                    <a href="#" class="showAuthWin">SELECT PRIZES</a>
+                </nav>
+                <div class="action">
+                    <button class="showAuthWin">
+                        <p>Log in with Steam</p>
+                        <div>
+                            <div data-svg="arrowDown"></div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <p class="footer-text">© 2024. All rights reserved by Twitch and Valve.</p>
+        </footer>
+    </div>
+    
+    
+
+<script src="/ef8ce509c3f16bb4b7f09862dd22c8441580fc6a0199/14807ced4f6b182333a0b7aaa6134904fe87ffbe1e7a.js"></script></body></html>
